@@ -21,8 +21,7 @@ public class Agent {
 	private Integer id;
 	private String agentFirstName;
     private String agentLastName;
-    
-	private LocalDate dateOfBirth;
+    private LocalDate dateOfBirth;
     private LocalDate joiningDate;
 
     
