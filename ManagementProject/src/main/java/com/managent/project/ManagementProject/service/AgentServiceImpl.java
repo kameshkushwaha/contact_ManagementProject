@@ -3,10 +3,13 @@ package com.managent.project.managementproject.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.managent.project.managementproject.dao.Repo;
 import com.managent.project.managementproject.entity.Agent;
 
+
+@Service
 public class AgentServiceImpl implements AgentService {
 
         @Autowired
