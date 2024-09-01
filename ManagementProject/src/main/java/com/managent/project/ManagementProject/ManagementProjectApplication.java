@@ -1,4 +1,4 @@
-package com.managent.project.ManagementProject;
+package com.managent.project.managementproject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
