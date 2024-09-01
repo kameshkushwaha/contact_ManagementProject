@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -36,6 +38,17 @@ public class AgentControlar {
 			map.put("message", "Data is not found");
 			return new ResponseEntity<>(map, HttpStatus.BAD_REQUEST);
 		}
+	}
+
+
+    // for saving tha data to Database
+    @PostMapping("/save")
+	public ResponseEntity<?> saveUser(@RequestBody Agent agent) {
+		Map<String, Object> map = new LinkedHashMap<String, Object>();
+		agentService.save(agent);
+		map.put("status", 1);
+		map.put("message", "Record is Saved Successfully!");
+		return new ResponseEntity<>(map, HttpStatus.CREATED);
 	}
 
 

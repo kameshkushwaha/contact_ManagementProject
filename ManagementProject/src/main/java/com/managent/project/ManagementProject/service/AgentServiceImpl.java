@@ -36,13 +36,13 @@ public class AgentServiceImpl implements AgentService {
             return repo.findById(id).get();
         }
 
-        @Override
-        public Agent findbyUserName(String agentFirstName) {
-            // TODO Auto-generated method stub
-           // throw new UnsupportedOperationException("Unimplemented method 'findbyUserName'");
-           return repo.findByUserName(agentFirstName);
+        //@Override
+        // public Agent findbyUserName(String agentFirstName) {
+        //     // TODO Auto-generated method stub
+        //    // throw new UnsupportedOperationException("Unimplemented method 'findbyUserName'");
+        //    return repo.findByUserName(agentFirstName);
 
-        }
+        // }
 
         @Override
         public void delete(Agent agent) {

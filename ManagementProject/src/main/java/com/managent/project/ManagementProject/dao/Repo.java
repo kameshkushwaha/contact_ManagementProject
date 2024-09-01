@@ -6,6 +6,6 @@ import com.managent.project.managementproject.entity.Agent;
 
 public interface Repo extends JpaRepository<Agent,Integer> {
 
-    public Agent findByUserName(String agentFirstName);
+    //public Agent findByUserName(String agentFirstName);
 
 }

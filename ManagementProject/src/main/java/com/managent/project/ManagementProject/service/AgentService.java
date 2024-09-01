@@ -12,7 +12,7 @@ public interface AgentService {
 
 	public Agent findById(Integer id);
 
-	public Agent findbyUserName(String userName);
+	//public Agent findbyUserName(String userName);
 
 	public void delete(Agent agent);
     
